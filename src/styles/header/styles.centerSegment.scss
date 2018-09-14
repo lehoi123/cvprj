@@ -1,0 +1,38 @@
+$arrowColor: rgba(167, 167, 167, 0.3);
+$theme: #237fcd;
+.arrowStyles {
+  font-size: 25px;
+  color: $arrowColor
+}
+
+.leftArrow {
+  display: flex;
+  flex: 0.5;
+  cursor: pointer;
+}
+
+.CVSegment {
+  .centerImgs {
+    cursor: pointer;
+    outline: none;
+  }
+  .center-tempImg {
+    cursor: pointer;
+    outline: none;
+    border-style: solid;
+    border-width: 1px;
+    border-color: $arrowColor;
+  }
+
+  .centerTemplate-highLight {
+    cursor: pointer;
+    border-style: solid;
+    border-width: 1.4px;
+    border-color: $theme;
+    outline: none;
+  }
+}
+
+.rightArrow {
+  @extend .leftArrow;
+}

@@ -1,0 +1,47 @@
+/*
+* add cover letter
+*/
+.transitionAll,
+.coverLetter .addCoverLetter,
+.coverLetter .addCoverLetter .title,
+.coverLetter .addCoverLetter .description {
+  transition: all linear 0.2s;
+}
+
+.coverLetter {
+  width: 100%;
+  margin-top: 22px;
+}
+.coverLetter .addCoverLetter {
+  width: 450px;
+  height: 110px;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  text-align: center;
+}
+.coverLetter .addCoverLetter:hover {
+  background: #f1f1f1;
+  cursor: pointer;
+  border-color: #288ad3;
+}
+.coverLetter .addCoverLetter .title {
+  font-weight: 500;
+  color: #000;
+  font-size: 1.4rem;
+  margin-top: -4px;
+}
+.coverLetter .addCoverLetter .description {
+  color: #838383;
+  font-size: 1.2rem;
+  margin-top: -2px;
+}
+.coverLetter .addCoverLetter:hover .title,
+.coverLetter .addCoverLetter:hover .description {
+  color: #288ad3;
+}
+.coverLetter .addCoverLetter:hover .cv-add {
+  background-position: -650px -100px;
+}
+.coverLetter .addCoverLetter .cv-add {
+  margin-top: 8px;
+}

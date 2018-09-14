@@ -1,0 +1,42 @@
+#Toast {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: bottom ease-in-out .3s;
+
+  &.up {
+    animation: moveUp ease-in-out .3s;
+  }
+
+  &.down {
+    bottom: -100px;
+  }
+
+  .toastContent {
+
+    .message {
+      font-size: 1.6rem;
+      background: rgba(0, 0, 0, .6);
+      padding: 4px 16px;
+      color: #fff;
+      border-radius: 3px;
+    }
+
+  }
+}
+
+@keyframes moveUp {
+  from {
+    bottom: -20px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}

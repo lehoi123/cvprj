@@ -1,0 +1,154 @@
+$theme: #237FCD;
+$white: #fff;
+
+@mixin breakpoint($class) {
+    @if $class == xs {
+      @media (max-width: 767px) { @content; }
+    }
+   
+    @else if $class == sm {
+      @media (min-width: 768px) { @content; }
+    }
+   
+    @else if $class == md {
+      @media (min-width: 992px) { @content; }
+    }
+   
+    @else if $class == lg {
+      @media (min-width: 1200px) { @content; }
+    }
+   
+    @else {
+      @warn "Breakpoint mixin supports: xs, sm, md, lg";
+    }
+  }
+
+.footerContainer {
+    background-color: $theme;
+    max-width: 1224px;
+    margin: 25px auto 0 auto;
+    @include breakpoint(xs) {
+        display: flex;
+        flex-direction: column;
+        height: 203px;
+        justify-content: center;
+        align-items: center;
+    }
+  
+        height: 110px;
+        display: flex;
+        flex-direction: row;
+      
+}
+
+// LOGO
+
+.theLogo {
+    @include breakpoint(xs) {
+        display: flex;
+        align-self: center;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+        flex: 3;
+        margin-left: 20px;
+        margin-top: 20px;
+}
+.logoFooter {
+    width: 56px;
+    height: 70px;
+}
+
+// BUTTON GROUP
+.buttonGroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    @include breakpoint(xs) {
+        flex: 1;
+    }
+    flex: 4;
+    justify-content: center;
+}
+
+// buttonGroupItem
+
+.buttonGroupItem {
+    text-decoration: none;
+    font-size: 13px;
+    color: $white;
+    font-weight: 100;
+    @include breakpoint(xs) {
+       margin-right: 20px;
+    }
+
+    
+}
+
+.footerGuide {
+    @include breakpoint(xs) {
+        display: flex;
+        flex: 2;
+        a {
+            font-size: 15px;
+        }
+    }
+    cursor: pointer;
+}
+
+.footerAdvice {
+    @extend .footerGuide;
+   
+}
+
+.footerContact {
+    @extend .footerGuide;
+    
+}
+
+.footerLogin {
+    @extend .footerGuide;
+    
+}
+.footerFeedback {
+    @extend .footerGuide;
+   
+}
+
+// FANPAGE
+
+.footerFanPage {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    @include breakpoint(xs) {
+        display: flex;
+        flex: 4;
+    }
+    flex: 3;
+    
+}
+
+
+.fanPageTxt {
+    text-decoration: none;
+    color: rgba($color: $white, $alpha: 0.5);
+    background-color: rgba($color: $white, $alpha: 0.10);
+    text-align: center;
+    @include breakpoint(xs) {
+        font-size: 13px;
+        padding: 15px 125px 15px 140px;
+    }
+
+        font-size: 12px;
+        padding: 15px 55px 15px 55px;
+    
+   
+    
+}
+
+  

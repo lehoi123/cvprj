@@ -1,0 +1,173 @@
+$primary: #288ad3;
+$avatar-small: 100px;
+$avatar-normal: 150px;
+$avatar-large: 188px;
+
+%transitionAll {
+  transition: all linear .3s;
+}
+
+@mixin position-absolute($top: 0, $right: 0, $bottom: 0, $left: 0) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+.defaultTemplate {
+  .personalDetail {
+    display: flex;
+
+    .contents {
+      flex: 2;
+    }
+
+    .avatarBox {
+      flex: 1;
+      position: relative;
+      .noAvatar {
+        display: none;
+      }
+
+      .overlay {
+        content: ' ';
+        position: absolute;
+        top: -10px;
+        right: -56px;
+        bottom: 55px;
+        left: 51px;
+        background: rgba(204, 204, 204, 0.2);
+        border-radius: 5px;
+        z-index: 9;
+        display: none;
+        .avatarBtn {
+          position: absolute;
+          top: 16px;
+          right: 17px;
+          display: flex;
+          width: 22px;
+          height: 22px;
+          justify-content: center;
+          align-items: center;
+
+          svg {
+            color: #999;
+            font-size: 1.6rem;
+          }
+
+          svg:hover {
+            color: #237fcd;
+          }
+        }
+
+        .btnShowHide {
+          top: 50px;
+        }
+
+        .btnShowCrop {
+          top: 85px;
+        }
+
+        .btnShowChooseSize {
+          top: 120px;
+        }
+
+      }
+
+      .btnDeleteAvatar {
+        position: absolute;
+        right: -24px;
+        top: -24px;
+        zoom: 0.8;
+        display: none;
+        z-index: 3;
+      }
+
+      .avatar {
+        float: right;
+        background: url('../../../../../assets/assets/images/mainPage/cv/personalDetail/no-avatar.png');
+        background-size: 100%;
+        overflow: hidden !important;
+        position: relative;
+        z-index: 10;
+
+        .avatarOverlay {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          z-index: 2;
+          background: rgba(255,255,255,.3);
+          opacity: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          @extend %transitionAll;
+        }
+
+        .avatarUploadIcon {
+          width: 20px;
+          height: 24px;
+        }
+      }
+
+      .noAvatar {
+        float: right;
+        //background: url('../../../../../assets/assets/images/mainPage/cv/personalDetail/no-avatar.png');
+        background-size: 100%;
+        overflow: hidden !important;
+        position: relative;
+        z-index: 10;
+
+        .avatarOverlay {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          z-index: 2;
+          background: rgba(255,255,255,.3);
+          opacity: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          @extend %transitionAll;
+        }
+
+        .avatarUploadIcon {
+          width: 20px;
+          height: 24px;
+        }
+      }
+
+
+
+      .small, .small img {
+        width: $avatar-small;
+        height: $avatar-small;
+      }
+
+      .normal, .normal img {
+        width: $avatar-normal;
+        height: $avatar-normal;
+      }
+
+      .large, .large img {
+        width: $avatar-large;
+        height: $avatar-large;
+      }
+
+      &:hover {
+        cursor: pointer;
+        .btnDeleteAvatar {
+          display: block;
+        }
+        .avatarOverlay {
+          opacity: 1;
+        }
+        .overlay {
+          display: block;
+        }
+      }
+    }
+
+  }
+}

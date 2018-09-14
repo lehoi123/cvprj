@@ -1,0 +1,111 @@
+$theme: #288ad3;
+$white: #fff;
+
+
+.registerContainer {
+    margin: 0;
+    padding-top: 20px;
+    padding-left: 20px;
+    background-color: $white;
+    height: 100%;
+}
+
+.registerTitle {
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.firstNameRegisterWrapper,
+.lastNameRegisterWrapper,
+.emailRegisterWrapper,
+.passwordRegisterWrapper
+{
+    margin-bottom: 15px;
+    .firstNameRegisterInput,
+    .lastNameRegisterInput,
+    .emailRegisterInput,
+    .passwordRegisterInput {
+        width: 95%;
+        height: 3.5vh;
+        border-radius: 2px;
+        border: 1px solid #CECECE;
+    }
+}
+
+.firstNameRegister,
+.lastNameRegister,
+.emailRegister,
+.passwordRegister
+ {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.acceptWrapper {
+    margin: 0;
+   margin-bottom: 20px;
+   background-color: $theme;
+   width: 23%;
+   padding-top: 4px;
+   padding-bottom: 4px;
+   border-radius: 2px;
+   cursor: pointer;
+    .accept {
+        font-size: 13px;
+        color: $white;
+        text-transform: uppercase;
+        text-align: center;
+    }
+}
+
+.haveAccWrapper {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    .haveAcc {
+        margin: 0;
+        font-size: 13px;
+    }
+    .accWrapper {
+        margin: 0;
+        margin-left: 5px;
+        cursor: pointer;
+        p {
+            font-size: 13px;
+            color: $theme;
+            font-weight: bold;
+        }
+    }
+}
+
+// EMAIL NOTIFICATION
+.registerNotification {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    margin-right: 25px;
+    border-bottom: 0.5px solid #CECECE;
+    
+    p:first-child {
+        font-weight: bold;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    p:nth-child(2) {
+        font-size: 11px;
+    }
+}
+
+.registerFailNavi {
+    p {
+        font-size: 11px;
+        margin-bottom: 6px;
+    }
+    .toChange {
+        font-size: 11px;
+        font-weight: bold;
+        color: $theme;
+    }
+}
+

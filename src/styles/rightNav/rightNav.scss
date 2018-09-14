@@ -1,0 +1,156 @@
+$theme: #237FCD;
+$white: #fff;
+$headerRightBackground: #f6f6f6;
+$gray: #a8a8a8;
+
+@mixin breakpoint($class) {
+    @if $class == xs {
+      @media (max-width: 767px) {
+        @content;
+      }
+    } @else if $class == sm {
+      @media (min-width: 768px) {
+        @content;
+      }
+    } @else if $class == md {
+      @media (min-width: 992px) {
+        @content;
+      }
+    } @else if $class == lg {
+      @media (min-width: 1200px) {
+        @content;
+      }
+    } @else {
+      @warn "Breakpoint mixin supports: xs, sm, md, lg";
+    }
+}
+
+.inExpand { 
+    height: 1501px;
+    transition: all 0.5s ease-in-out;
+    background-color: $headerRightBackground;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    //border: 1px solid gray;
+    @include breakpoint(xs) {
+        width: 100%;
+        height: 800px;
+        flex: 1;
+    }
+    @include breakpoint(sm) {
+        width: 768px;
+    }
+    @include breakpoint(md) {
+        width: 380px;
+    }
+    @include breakpoint(lg) {
+        width: 380px;
+    }
+}
+
+.expand {
+    width: 830px;
+    height: 1501px;
+    transition: all 0.5s ease-in-out;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+// @keyframes expand {
+//     0 %
+// }
+
+.rightHeaderWrapper {
+    display: flex;
+    flex-direction: row;
+    background-color: $headerRightBackground;
+    margin: 0;
+    align-items: center;
+    height: 7vh;
+    border-bottom: 1px solid rgb(231, 231, 231);
+    justify-content: space-between;
+}
+.rightHeader {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding-left: 15px;
+    flex: 8;
+}
+
+
+.homeRightIcon {
+    margin: 0;
+    width: 20px;
+    height: 18px;
+    display: flex;
+    align-self: center;
+    cursor: pointer;
+}
+
+.homeText {
+    margin: 0;
+    padding-left: 5px;
+    padding-right: 10px;
+    font-size: 13px;
+    display: flex;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.doubleAngle {
+    margin: 0;
+    padding-right: 10px;
+    font-size: 13px;
+    display: flex;
+    align-self: center;
+    color: $gray;
+    margin-top: 5px;
+}
+
+.moduleName {
+    margin: 0;
+    font-size: 13px;
+    margin-top: 5px;
+}
+.homeCloseIcon {
+    display: flex;
+    align-self: center;
+    flex: 0.3;
+    padding-right: 15px;
+    width: 13px;
+    height: 14px;
+    cursor: pointer;
+    margin-top: 7px;
+    margin-left: 13px;
+}
+
+.expandableIcon {
+    margin-top: 5px;
+    cursor: pointer;
+    @include breakpoint(sm) {
+        display: none;
+    }
+    @include breakpoint(xs) {
+        display: none;
+    }
+    @include breakpoint(md) {
+        display: block;
+    }
+    @include breakpoint(lg) {
+        display: block;
+    }
+}
+
+.rightNavRightWrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+
+::-webkit-scrollbar {
+ 
+}

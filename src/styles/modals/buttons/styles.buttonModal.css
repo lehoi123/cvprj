@@ -1,0 +1,28 @@
+.ButtonModal {
+  flex-direction: row;
+  display: flex;
+  margin: 0;
+  min-width: 70px;
+}
+.ButtonModal .ButtonModal-text {
+  font-size: 13px;
+  align-self: center;
+  margin: 0;
+  padding: 4px 0px 0px 2px;
+}
+.ButtonModal .ButtonModal-text-highlight {
+  color: #288ad3;
+}
+.ButtonModal .ButtonModal-no-margin {
+  margin: 0;
+}
+.ButtonModal .ButtonModal-straight-stroke {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 11px;
+}
+
+.ButtonModal:hover {
+  background-color: #e7e7e7;
+  cursor: pointer;
+}

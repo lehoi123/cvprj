@@ -1,0 +1,117 @@
+.footerContainer {
+  background-color: #237fcd;
+  max-width: 1224px;
+  margin: 25px auto 0 auto;
+  height: 110px;
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 767px) {
+  .footerContainer {
+    display: flex;
+    flex-direction: column;
+    height: 203px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.theLogo {
+  flex: 3;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+@media (max-width: 767px) {
+  .theLogo {
+    display: flex;
+    align-self: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.logoFooter {
+  width: 56px;
+  height: 70px;
+}
+
+.buttonGroup {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex: 4;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  .buttonGroup {
+    flex: 1;
+  }
+}
+
+.buttonGroupItem {
+  text-decoration: none;
+  font-size: 13px;
+  color: #fff;
+  font-weight: 100;
+}
+@media (max-width: 767px) {
+  .buttonGroupItem {
+    margin-right: 20px;
+  }
+}
+
+.footerGuide,
+.footerAdvice,
+.footerContact,
+.footerLogin,
+.footerFeedback {
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  .footerGuide,
+  .footerAdvice,
+  .footerContact,
+  .footerLogin,
+  .footerFeedback {
+    display: flex;
+    flex: 2;
+  }
+  .footerGuide a,
+  .footerAdvice a,
+  .footerContact a,
+  .footerLogin a,
+  .footerFeedback a {
+    font-size: 15px;
+  }
+}
+
+.footerFanPage {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex: 3;
+}
+@media (max-width: 767px) {
+  .footerFanPage {
+    display: flex;
+    flex: 4;
+  }
+}
+
+.fanPageTxt {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+  text-align: center;
+  font-size: 12px;
+  padding: 15px 55px 15px 55px;
+}
+@media (max-width: 767px) {
+  .fanPageTxt {
+    font-size: 13px;
+    padding: 15px 125px 15px 140px;
+  }
+}

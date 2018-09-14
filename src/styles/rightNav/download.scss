@@ -1,0 +1,47 @@
+.downloadContainer {
+    margin:  0;
+    padding-top: 20px;
+    background-color: #fff;
+    height: 100%;
+}
+.done {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.allowDownload {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.downloadWrapper {
+    margin-top: 20px;
+    width: 50%;
+    cursor: pointer;
+}
+.downloadImg {
+    width: 35px;
+    position: absolute;
+    z-index: 9999;
+    margin-right: 30px;
+}
+
+.fileName {
+    display: flex;
+    background-color: rgb(203, 53, 31);
+    color: #fff;
+    position: absolute;
+    z-index: 1;
+    width: 180px;
+    height: 27px;
+    margin-left: 33px;
+    padding-left: 15px;
+    padding-top: 8px;
+    font-size: 13px;
+    font-weight: normal;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    font-weight: bold;
+}

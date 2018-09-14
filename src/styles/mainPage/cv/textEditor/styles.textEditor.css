@@ -1,0 +1,37 @@
+.textEditor {
+  position: relative;
+}
+.textEditor ul > li {
+  list-style: inside;
+}
+.textEditor .toolbarEditor {
+  height: 28px;
+  background: #808080;
+  position: absolute;
+  right: 8px;
+  top: -31px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  display: none;
+  padding: 0 2px;
+  z-index: 9;
+}
+.textEditor .toolbarEditor.show {
+  display: flex;
+}
+.textEditor .toolbarEditor .buttonEditor {
+  width: 24px;
+  height: 28px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #cccccc;
+}
+.textEditor .toolbarEditor .buttonEditor * {
+  font-size: 1.4rem !important;
+}
+.textEditor .toolbarEditor .buttonEditor:hover {
+  color: #ffffff;
+  cursor: pointer;
+}

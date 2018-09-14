@@ -1,0 +1,48 @@
+.LanguageModal {
+  height: 600px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px;
+}
+
+.LanguageModal-body {
+  flex: 9;
+  overflow: scroll;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.LanguageModal-header {
+  flex: 1;
+  display: flex;
+}
+.LanguageModal-header .LanguageModal-header-title {
+  font-size: 16px;
+  align-self: center;
+}
+
+@media (min-width: 569px) and (max-width: 640px) {
+  .LanguageModal {
+    height: 500px;
+  }
+}
+
+@media (max-width: 568px) {
+  .LanguageModal {
+    height: 450px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
+  .LanguageModal {
+    height: 350px;
+  }
+}
+
+@media (max-width: 320px) {
+  .LanguageModal {
+    height: 300px;
+  }
+}

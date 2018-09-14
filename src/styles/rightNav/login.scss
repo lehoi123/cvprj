@@ -1,0 +1,221 @@
+@mixin breakpoint($class) {
+    @if $class == xs {
+      @media (max-width: 767px) {
+        @content;
+      }
+    } @else if $class == sm {
+      @media (min-width: 768px) {
+        @content;
+      }
+    } @else if $class == md {
+      @media (min-width: 992px) {
+        @content;
+      }
+    } @else if $class == lg {
+      @media (min-width: 1200px) {
+        @content;
+      }
+    } @else {
+      @warn "Breakpoint mixin supports: xs, sm, md, lg";
+    }
+}
+.LoginContainer {
+    margin: 0;
+    background-color: #fff;
+    height: 100%;
+    // padding-bottom: 100%;
+}
+
+.loginTitleWrapper {
+    padding-top: 20px;
+    border-bottom: 0.5px solid rgba(180, 180, 180, 0.8);
+    width: 90%;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.loginTitle {
+    text-align: center;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.userNameWrapper,
+.passwordWrapper,
+.loginBtnWrapper,
+.forgotWrapper,
+.orWarpper,
+{
+    margin-left: 20px;
+}
+.passwordWrapper {
+    margin-top: 10px;
+}
+.userName,
+.password
+{
+    font-size: 13px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+.userNameInput,
+.passwordInput
+{
+    width: 95%;
+    height: 3.5vh;
+    border-radius: 5;
+    border: 1px solid #CECECE;
+    font-size: 13px;
+    padding-left: 5px;
+}
+.userNameInput:focus,
+.passwordInput:focus {
+    outline: none;
+}
+
+.forgotWrapper {
+    margin-top: 10px;
+    p {
+        text-align: right;
+        margin-right: 15px;
+        color: #288ad3;
+        font-size: 11px;
+        @include breakpoint(sm) {
+            margin-right: 30px;
+        }
+        @include breakpoint(md) {
+            margin-right: 12px;
+        }
+    }
+
+    cursor: pointer;
+}
+
+.loginBtnWrapper {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #288ad3;
+    width: 15%;
+    padding: 5px 10px 5px 10px;
+    border-radius: 2px;
+}
+
+.loginBtn {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.orWarpper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.separator {
+    border-bottom: 0.5px solid #CECECE;
+    height: 1px;
+    width: 98%;
+    margin-top: 10px;
+    margin-right: 13px;
+}
+
+.orTxt {
+    font-size: 14px;
+    text-align: center;
+    position: absolute;
+    background-color: #fff;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.socialLogin {
+    display: flex;
+    flex-direction: column;
+}
+
+.facebookWrapper {
+    margin-bottom: 40px;
+    margin-top: 10px;
+    width: 50%;
+    vertical-align: middle;
+    @include breakpoint(sm) {
+        width: 30%;
+    }
+    @include breakpoint(md) {
+        width: 50%;
+    }
+    @include breakpoint(lg) {
+        width: 50%;
+    }
+}
+
+.googleWrapper
+{
+    margin-bottom: 60px;
+    margin-top: 10px;
+    width: 50%;
+    vertical-align: middle;
+    @include breakpoint(sm) {
+        width: 30%;
+    }
+    @include breakpoint(md) {
+        width: 50%;
+    }
+    @include breakpoint(lg) {
+        width: 50%;
+    }
+}
+
+.facebookIcon {
+    width: 33px;
+    position: absolute;
+    z-index: 9999;
+    margin-right: 30px;
+}
+.fbLogin {
+    display: flex;
+    background-color: rgb(61, 81, 149);
+    color: #fff;
+    position: absolute;
+    z-index: 1;
+    width: 180px;
+    height: 25px;
+    margin-left: 33px;
+    padding-left: 15px;
+    padding-top: 8px;
+    font-size: 12px;
+    font-weight: normal;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+   
+}
+
+
+.googleIcon {
+    width: 33px;
+    position: absolute;
+    z-index: 9999;
+    margin-right: 30px;
+}
+
+.ggLogin {
+    display: flex;
+    background-color: rgb(203, 53, 31);
+    color: #fff;
+    position: absolute;
+    z-index: 1;
+    width: 180px;
+    height: 25px;
+    margin-left: 33px;
+    padding-left: 15px;
+    padding-top: 8px;
+    font-size: 12px;
+    font-weight: normal;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+

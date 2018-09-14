@@ -1,0 +1,287 @@
+.cv-icon, .cv-icon-lang, .cv-icon-small, .cv-icon-modal {
+  background: url('../../assets/assets/icons/cv-icon.png') top left;
+  background-size: 980px auto;
+  background-position: 0 -100px;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+}
+.cv-icon.cv-new {
+  background-position: 0 -100px;
+}
+.cv-icon.cv-upload {
+  background-position: -50px -100px;
+}
+.cv-icon.cv-form {
+  background-position: -100px -100px;
+}
+.cv-icon.cv-language {
+  background-position: -150px -100px;
+}
+.cv-icon.cv-photo {
+  background-position: -200px -100px;
+}
+.cv-icon.cv-signature {
+  background-position: -250px -100px;
+}
+.cv-icon.cv-additional {
+  background-position: -300px -100px;
+}
+.cv-icon.cv-download {
+  background-position: -350px -100px;
+}
+.cv-icon.cv-account {
+  background-position: -400px -100px;
+}
+.cv-icon.cv-add {
+  background-position: -450px -100px;
+}
+.cv-icon.cv-photo-plus {
+  background-position: -550px -100px;
+}
+.cv-icon.cv-close {
+  background-position: -600px -100px;
+}
+.cv-icon.cv-add-active {
+  background-position: -650px -100px;
+}
+
+/* language */
+.cv-icon-lang, .cv-icon-small {
+  background-position: 0 -150px;
+  width: 25px;
+  height: 25px;
+}
+.cv-icon-lang.icon-vietnam {
+  background-position: -125px -150px;
+}
+.cv-icon-lang.icon-germany {
+  background-position: -150px -150px;
+}
+.cv-icon-lang.icon-korea {
+  background-position: -175px -150px;
+}
+.cv-icon-lang.icon-japan {
+  background-position: -200px -150px;
+}
+
+/* modal */
+.cv-icon-modal {
+  background-position: 0 -150px;
+  width: 20px;
+  height: 20px;
+}
+
+.cv-icon-modal.icon-upload {
+  background-position: 0 -150px;
+}
+
+.cv-icon-modal.icon-cancel {
+  background-position: -25px -150px;
+}
+
+.cv-icon-modal.icon-crop {
+  background-position: -50px -150px;
+}
+
+.cv-icon-modal.icon-choose-size {
+  background-position: -75px -150px;
+}
+
+.cv-icon-modal.icon-accept {
+  background-position: -100px -150px;
+}
+
+/* small icons */
+.cv-icon-small.cv-upload {
+  background-position: 0 -150px;
+}
+
+.language-icon {
+  width: 25px;
+  height: 25px;
+}
+
+.language-icon.language-vietnam {
+  background: url('../../assets/assets/icons/flags/vietnam.svg');
+}
+
+.language-icon.language-korea {
+  background: url('../../assets/assets/icons/flags/south-korea.svg');
+}
+
+.language-icon.language-indonesia {
+  background: url('../../assets/assets/icons/flags/indonesia.svg');
+}
+
+.language-icon.language-israel {
+  background: url('../../assets/assets/icons/flags/israel.svg');
+}
+
+.language-icon.language-malaysia {
+  background: url('../../assets/assets/icons/flags/malasya.svg');
+}
+
+.language-icon.language-japan {
+  background: url('../../assets/assets/icons/flags/japan.svg');
+}
+
+.language-icon.language-pakistan {
+  background: url('../../assets/assets/icons/flags/pakistan.svg');
+}
+
+.language-icon.language-philippines {
+  background: url('../../assets/assets/icons/flags/philippines.svg');
+}
+
+.language-icon.language-singapore {
+  background: url('../../assets/assets/icons/flags/singapore.svg');
+}
+
+.language-icon.language-thailand {
+  background: url('../../assets/assets/icons/flags/thailand.svg');
+}
+
+.language-icon.language-austria {
+  background: url('../../assets/assets/icons/flags/austria.svg');
+}
+
+.language-icon.language-polish {
+  background: url('../../assets/assets/icons/flags/poland.svg');
+}
+
+.language-icon.language-belgium {
+  background: url('../../assets/assets/icons/flags/belgium.svg');
+}
+
+.language-icon.language-portugal {
+  background: url('../../assets/assets/icons/flags/portugal.svg');
+}
+
+.language-icon.language-netherlands {
+  background: url('../../assets/assets/icons/flags/netherlands.svg');
+}
+
+.language-icon.language-ireland {
+  background: url('../../assets/assets/icons/flags/ireland.svg');
+}
+
+.language-icon.language-italy {
+  background: url('../../assets/assets/icons/flags/italy.svg');
+}
+
+.language-icon.language-norway {
+  background: url('../../assets/assets/icons/flags/norway.svg');
+}
+
+.language-icon.language-finland {
+  background: url('../../assets/assets/icons/flags/finland.svg');
+}
+
+.language-icon.language-france {
+  background: url('../../assets/assets/icons/flags/france.svg');
+}
+
+.language-icon.language-spanish {
+  background: url('../../assets/assets/icons/flags/spain.svg');
+}
+
+.language-icon.language-turkish {
+  background: url('../../assets/assets/icons/flags/turkey.svg');
+}
+
+.language-icon.language-swedish {
+  background: url('../../assets/assets/icons/flags/sweden.svg');
+}
+
+.language-icon.language-switzerland {
+  background: url('../../assets/assets/icons/flags/switzerland.svg');
+}
+
+.language-icon.language-united-kingdom {
+  background: url('../../assets/assets/icons/flags/united-kingdom.svg');
+}
+
+.language-icon.language-venezuela {
+  background: url('../../assets/assets/icons/flags/venezuela.svg');
+}
+
+.language-icon.language-argentina {
+  background: url('../../assets/assets/icons/flags/argentina.svg');
+}
+
+.language-icon.language-brazil {
+  background: url('../../assets/assets/icons/flags/brazil.svg');
+}
+
+.language-icon.language-canada {
+  background: url('../../assets/assets/icons/flags/canada.svg');
+}
+
+.language-icon.language-chile {
+  background: url('../../assets/assets/icons/flags/chile.svg');
+}
+
+.language-icon.language-colombia {
+  background: url('../../assets/assets/icons/flags/colombia.svg');
+}
+
+.language-icon.language-denmark {
+  background: url('../../assets/assets/icons/flags/denmark.svg');
+}
+
+.language-icon.language-mexico {
+  background: url('../../assets/assets/icons/flags/mexico.svg');
+}
+
+.language-icon.language-peru {
+  background: url('../../assets/assets/icons/flags/peru.svg');
+}
+
+.language-icon.language-united-states {
+  background: url('../../assets/assets/icons/flags/united-states.svg');
+}
+
+.language-icon.language-south-africa {
+  background: url('../../assets/assets/icons/flags/south-africa.svg');
+}
+
+.language-icon.language-nigeria {
+  background: url('../../assets/assets/icons/flags/nigeria.svg');
+}
+
+.language-icon.language-australia {
+  background: url('../../assets/assets/icons/flags/australia.svg');
+}
+
+.language-icon.language-new-zealand {
+  background: url('../../assets/assets/icons/flags/new-zealand.svg');
+}
+
+.language-icon.language-germany {
+  background: url('../../assets/assets/icons/flags/germany.svg');
+}
+
+.cv-icon-history-see {
+  width: 16px;
+  height: 10px;
+  background: url('../../assets/assets/icons/history/ic-view.svg');
+}
+
+.cv-icon-history-edit {
+  width: 12px;
+  height: 12px;
+  background: url('../../assets/assets/icons/history/ic-edit.svg');
+}
+
+.cv-icon-history-print {
+  width: 14px;
+  height: 13px;
+  background: url('../../assets/assets/icons/history/ic-print.svg');
+}
+
+.cv-icon-history-download {
+  width: 10px;
+  height: 13px;
+  background: url('../../assets/assets/icons/history/ic-download.svg');
+}

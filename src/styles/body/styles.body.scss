@@ -1,0 +1,41 @@
+.App-body {
+  transition: height 0.25s;
+  margin-top: 125px;
+  overflow: hidden;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+
+  &.alignLeft {
+    margin: 125px 0 0 0;
+    justify-content: flex-start;
+
+    .parentBody {
+      width: calc(100% - 380px);
+      display: flex;
+      justify-content: center;
+      overflow: hidden;
+    }
+  }
+
+  .bodyScale {
+    transition: transform 0.25s;
+    transform-origin: 50% 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    backface-visibility: hidden;
+    perspective: 1000px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .parentBody {
+    margin: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .App-body {
+    margin-top: 130px;
+  }
+}

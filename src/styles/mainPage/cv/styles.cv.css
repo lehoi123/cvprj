@@ -1,0 +1,338 @@
+/*
+* cv page
+*/
+.cvContainer .cvContent .rowTool .middleTool .btnTrash *,
+.cvContainer .cvContent .rowTool .btn,
+.addPartModal .content .item .itemBody,
+.addPartModal .content .item .itemBody .iconBox * {
+  transition: all linear 0.2s;
+}
+
+.cvContainer .cvContent .rowPartActive .partContent,
+.cvContainer .cvContent .headingPartActive .partContent {
+  z-index: 10;
+}
+.cvContainer .cvContent .rowPartActive .partContent:before,
+.cvContainer .cvContent .headingPartActive .partContent:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+  bottom: -1rem;
+  left: -1rem;
+  border-radius: 5px;
+  border: 2px solid #ebebeb;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.cvContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 24px;
+}
+.cvContainer .cvContent {
+  width: 634px;
+  height: 990px;
+  background: #ffffff;
+  padding: 42px 70px;
+  margin-top: 24px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.cvContainer .cvContent .pageIndex {
+  position: absolute;
+  width: 70px;
+  height: 22px;
+  background: #288ad3;
+  bottom: 10px;
+  right: 0;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cvContainer .cvContent .pageIndex p {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+.cvContainer .cvContent .part {
+  width: 634px;
+  position: relative;
+  padding-top: 16px;
+}
+.cvContainer .cvContent .part .partContent {
+  position: relative;
+  z-index: 9;
+}
+.cvContainer .cvContent .rowPartActive .row {
+  position: relative;
+}
+.cvContainer .cvContent .rowPartActive .row.rowActive {
+  z-index: 9;
+}
+.cvContainer .cvContent .rowPartActive .row.rowActive .label,
+.cvContainer .cvContent .rowPartActive .row.rowActive .value {
+  z-index: 9;
+}
+.cvContainer .cvContent .rowPartActive .row.rowActive .rowTool {
+  display: flex;
+}
+.cvContainer .cvContent .rowPartActive .row.rowActive:after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  top: -0.75rem;
+  left: -0.75rem;
+  right: -1.8rem;
+  bottom: -1rem;
+  background: rgba(242, 242, 242, 0.7);
+}
+.cvContainer .cvContent .headingPartActive:before {
+  background: rgba(242, 242, 242, 0.7);
+  border: none;
+  border-radius: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.cvContainer .cvContent .headingPartActive .heading h3,
+.cvContainer .cvContent .headingPartActive .label,
+.cvContainer .cvContent .headingPartActive .value {
+  border-color: #cccccc !important;
+}
+.cvContainer .cvContent .headingPartActive .heading {
+  position: relative;
+}
+.cvContainer .cvContent .headingPartActive .heading h3 {
+  position: relative;
+  z-index: 9;
+}
+.cvContainer .cvContent .headingPartActive .heading .rowTool {
+  display: flex;
+  top: 0;
+}
+.cvContainer .cvContent .rows .row:last-child .rowTool {
+  bottom: -50px;
+  top: inherit;
+}
+.cvContainer .cvContent .rowTool {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+}
+.cvContainer .cvContent .rowTool.left {
+  top: -66px;
+  left: -56px;
+  width: 50px;
+  height: 160px;
+}
+.cvContainer .cvContent .rowTool.left .middleTool {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.cvContainer .cvContent .rowTool.right {
+  top: -66px;
+  right: -64px;
+  width: 50px;
+  height: 160px;
+}
+.cvContainer .cvContent .rowTool.right .middleTool {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.cvContainer .cvContent .rowTool .topTool,
+.cvContainer .cvContent .rowTool .bottomTool {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+.cvContainer .cvContent .rowTool .middleTool {
+  display: flex;
+  flex: 2;
+  width: 100%;
+  background: #f2f2f2;
+  flex-direction: column;
+  justify-content: center;
+}
+.cvContainer .cvContent .rowTool .middleTool .btn {
+  margin: 3px auto;
+}
+.cvContainer .cvContent .rowTool .middleTool .btnTrash * {
+  font-size: 2.4rem;
+  color: #999999;
+}
+.cvContainer .cvContent .rowTool .middleTool .btnTrash:hover * {
+  color: #237fcd;
+  cursor: pointer;
+}
+.cvContainer .cvContent .rowTool .middleTool .btnTrash.disable * {
+  color: #cecece;
+}
+.cvContainer .cvContent .rowTool .btn {
+  width: 22px;
+  height: 22px;
+  background: #999999;
+  display: flex;
+  border-radius: 11px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.cvContainer .cvContent .rowTool .btn:hover {
+  background: #237fcd;
+  cursor: pointer;
+}
+.cvContainer .cvContent .rowTool .btn.disable {
+  background: #cecece;
+}
+.cvContainer .cvContent .rowTool .btn * {
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+.cvContainer .cvContent .rowTool .tooltip {
+  position: absolute;
+  display: block;
+  left: 32px;
+  background: #666666;
+  z-index: 9;
+  border-radius: 3px;
+  width: max-content;
+  display: none;
+}
+.cvContainer .cvContent .rowTool .tooltip.left {
+  left: inherit;
+  right: 32px;
+  top: 0;
+}
+.cvContainer .cvContent .rowTool .tooltip.left:before {
+  content: ' ';
+  display: block;
+  width: 0px;
+  height: 0px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #666666;
+  position: absolute;
+  right: -4px;
+  top: 3px;
+}
+.cvContainer .cvContent .rowTool .tooltip.left p {
+  padding: 4px 8px;
+  font-size: 1.2rem !important;
+  color: #ffffff !important;
+}
+.cvContainer .cvContent .rowTool .tooltip.right:before {
+  content: ' ';
+  display: block;
+  width: 0px;
+  height: 0px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #666666;
+  position: absolute;
+  left: -4px;
+  top: 3px;
+}
+.cvContainer .cvContent .rowTool .tooltip.right p {
+  padding: 4px 8px 4px 8px;
+  font-size: 1.2rem !important;
+  color: #ffffff !important;
+}
+.cvContainer .cvContent .rowTool .parentTooltip {
+  position: relative;
+}
+.cvContainer .cvContent .rowTool .parentTooltip.disable .tooltip {
+  background: #cecece;
+}
+.cvContainer .cvContent .rowTool .parentTooltip.disable .tooltip.right:before {
+  border-right: 10px solid #cecece;
+}
+.cvContainer .cvContent .rowTool .parentTooltip.disable .tooltip.left:before {
+  border-left: 10px solid #cecece;
+}
+.cvContainer .cvContent .rowTool .parentTooltip:hover .tooltip {
+  display: block;
+}
+
+/**
+ ********* Add part modal ********
+ */
+.addPartModal .content .item .itemBody,
+.addPartModal .content .item .itemBody .iconBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addPartModal {
+  width: 100%;
+}
+.addPartModal .heading {
+  text-align: left;
+  margin: 19px 0 0 5px;
+}
+.addPartModal .heading h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.addPartModal .content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+.addPartModal .content .item {
+  width: 25%;
+  height: 150px;
+  margin: 0;
+}
+.addPartModal .content .item .itemBody {
+  width: 90%;
+  height: 80px;
+  border-radius: 3px;
+  background: #ececec;
+}
+.addPartModal .content .item .itemBody .iconBox {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background: #ffffff;
+}
+.addPartModal .content .item .itemBody .iconBox * {
+  font-size: 2rem;
+  color: #999999;
+}
+.addPartModal .content .item .itemName {
+  text-align: center;
+  margin-top: 12px;
+}
+.addPartModal .content .item .itemName p {
+  font-size: 1.2rem;
+}
+.addPartModal .content .item.active,
+.addPartModal .content .item:hover {
+  cursor: pointer;
+}
+.addPartModal .content .item.active .itemBody,
+.addPartModal .content .item:hover .itemBody {
+  background: #237fcd;
+}
+.addPartModal .content .item.active .iconBox *,
+.addPartModal .content .item:hover .iconBox * {
+  color: #237fcd;
+}
+.addPartModal .content .item.active .itemName p,
+.addPartModal .content .item:hover .itemName p {
+  font-weight: 500;
+}

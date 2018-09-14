@@ -1,0 +1,130 @@
+.Histories-block {
+  flex-wrap: wrap;
+  display: flex;
+
+  .History-Page-image {
+    width: 30%;
+    height: 100%;
+    border: solid 1px #ddd;
+    padding: 1px;
+    margin: 5px;
+  }
+}
+
+.Histories-button-block {
+  display: flex;
+  flex-direction: columns;
+  justify-content: center;
+  overflow: hidden;
+
+  .ButtonHistory {
+    flex-direction: row;
+    display: flex;
+    margin: 10px;
+    min-width: 100px;
+    height: 30px;
+    border: solid 1px #ddd;
+    border-radius: 2px;
+    overflow: hidden;
+    justify-content: center;
+    text-decoration: none;
+    color: #000;
+
+    i {
+      margin: 0;
+      align-self: center;
+    }
+
+    .ButtonHistory-text {
+      font-size: 12px;
+      font-weight: 600;
+      align-self: center;
+      margin: 6px 0px 5px 5px;
+    }
+
+    .ButtonHistory-text-highlight {
+      color: #288ad3;
+    }
+
+    .ButtonHistory-no-margin {
+      margin: 0;
+    }
+
+    .ButtonHistory-straight-stroke {
+      margin-left: 10px;
+      margin-right: 10px;
+      font-size: 11px;
+    }
+  }
+}
+
+.ButtonHistory:hover {
+  background-color: #288ad3;
+  color: #fff;
+  cursor: pointer;
+
+  .cv-icon-history-see {
+    background: url('../../assets/assets/icons/history/ic-view-hover.svg');
+  }
+
+  .cv-icon-history-edit {
+    background: url('../../assets/assets/icons/history/ic-edit-hover.svg');
+  }
+
+  .cv-icon-history-print {
+    background: url('../../assets/assets/icons/history/ic-print-hover.svg');
+  }
+
+  .cv-icon-history-download {
+    background: url('../../assets/assets/icons/history/ic-download-hover.svg');
+  }
+}
+
+.cvHistories {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 800px;
+  align-items: center;
+  position: relative;
+  padding: 50px 0px 50px 0px;
+
+  &.isLoading {
+    .historyLoading {
+      display: flex;
+    }
+  }
+
+  .historyLoading {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    display: none;
+  }
+
+  .Histories-container {
+    max-width: 670px;
+  }
+}
+
+@media (max-width: 1024px) {
+  
+  .cvHistories {
+    width: 600px;
+
+    .Histories-container {
+      max-width: 480px;
+    }
+  }
+
+  .History-Page-image {
+    width: 47% !important;
+  }
+}

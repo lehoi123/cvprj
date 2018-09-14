@@ -1,0 +1,56 @@
+$primary: #288ad3;
+$color-border: #d9d9d9;
+
+/*
+* add cover letter
+*/
+
+.transitionAll {
+  transition: all linear .2s;
+}
+
+.coverLetter {
+  width: 100%;
+  margin-top: 22px;
+
+  .addCoverLetter {
+    width: 450px;
+    height: 110px;
+    border: 1px solid $color-border;
+    border-radius: 3px;
+    text-align: center;
+    @extend .transitionAll;
+
+    &:hover {
+      background: #f1f1f1;
+      cursor: pointer;
+      border-color: $primary;
+    }
+
+    .title {
+      font-weight: 500;
+      color: #000;
+      font-size: 1.4rem;
+      @extend .transitionAll;
+      margin-top: -4px;
+    }
+
+    .description {
+      color: #838383;
+      font-size: 1.2rem;
+      margin-top: -2px;
+      @extend .transitionAll;
+    }
+
+    &:hover .title, &:hover .description {
+      color: $primary;
+    }
+    &:hover .cv-add {
+      background-position: -650px -100px;
+    }
+
+    .cv-add {
+      margin-top: 8px;
+    }
+  }
+}

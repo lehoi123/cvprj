@@ -1,0 +1,28 @@
+.sliderWrapper {
+  display: flex;
+  flex-direction: row;
+  width: 207px;
+  height: 60px;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+
+.sliderWrapper:focus {
+  outline: none !important;
+  outline-offset: none !important;
+}
+
+.minusCircle {
+  color: #237fcd;
+  font-size: 18px;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+.plusCircle {
+  color: #237fcd;
+  font-size: 18px;
+  margin-left: 5px;
+  margin-right: 10px;
+}

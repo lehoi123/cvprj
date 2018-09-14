@@ -1,0 +1,131 @@
+@import url(./education/styles.education.css);
+@import url(./otherSkill/styles.otherSkill.css);
+@import url(./personalDetail/styles.personalDetail.css);
+@import url(./workingExperience/styles.workingExperience.css);
+@import url(./signature/styles.signature.css);
+.Template02 .heading h3,
+.Template02 .row .label,
+.Template02 .row .value {
+  background: #ffffff;
+}
+
+/*
+* defaultTemplate
+*/
+.Template02 .part:nth-last-child(2).baseLine .bottomLine {
+  border-color: transparent !important;
+}
+
+.Template02:nth-child(1) {
+  margin-top: 0;
+}
+
+.Template02 .baseLine {
+  padding-bottom: 20px;
+}
+.Template02 .baseLine .bottomLine {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 4px solid #c0504d;
+}
+
+.Template02 .subPart .heading h3 {
+  padding-left: 8px;
+}
+
+.Template02 .half {
+  width: 50% !important;
+}
+
+.Template02 .fill {
+  flex: 1;
+}
+
+.Template02 .bold,
+.Template02 strong {
+  font-weight: 500;
+}
+
+.Template02 .colonChar:before {
+  content: ':';
+  float: left;
+  margin-right: 4px;
+}
+
+.Template02 .dotChar:before {
+  content: ' ';
+  width: 5px;
+  height: 5px;
+  border-radius: 2.5px;
+  background: #000;
+  display: inline-block;
+  margin: 6px 8px 0px 4px;
+  float: left;
+}
+
+.Template02 .heading {
+  margin-left: -4px;
+  width: 100%;
+}
+.Template02 .heading h3 {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding-left: 4px;
+  border: 1px solid transparent;
+}
+.Template02 .heading h3 * {
+  font-size: 1.6rem;
+}
+
+.Template02 .rows {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.Template02 .row {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  margin: 2px 0 0 -4px;
+}
+.Template02 .row .labelBlank {
+  width: 186px;
+  height: 16px;
+  float: left;
+}
+.Template02 .row .label {
+  width: 182px;
+  height: fit-content;
+  font-size: 1.2rem;
+  padding: 2px 0 2px 4px;
+  border: 1px solid transparent;
+}
+.Template02 .row .label.subLabel {
+  width: -moz-calc(50% - 182px);
+  width: -webkit-calc(50% - 182px);
+  width: calc(50% - 182px);
+}
+.Template02 .row .label * {
+  font-size: 1.2rem;
+}
+.Template02 .row .value {
+  flex: 1;
+  font-size: 1.2rem;
+  padding: 2px 0 2px 4px;
+  border: 1px solid transparent;
+  margin-left: -1px;
+}
+.Template02 .row .value * {
+  font-size: 1.2rem;
+}
+.Template02 .row .label:hover,
+.Template02 .row .value:hover {
+  background: #f6f6f6;
+}
+.Template02 .row.rowActive .label,
+.Template02 .row.rowActive .value {
+  border-color: #cccccc;
+}

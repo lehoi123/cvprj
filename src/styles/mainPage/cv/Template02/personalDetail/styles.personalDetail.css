@@ -1,0 +1,104 @@
+.Template02 .personalDetail .avatarBox .avatar .avatarOverlay {
+  transition: all linear 0.3s;
+}
+
+.Template02 .personalDetail {
+  display: flex;
+}
+.Template02 .personalDetail .contents {
+  flex: 2;
+}
+.Template02 .personalDetail .avatarBox {
+  flex: 1;
+  position: relative;
+}
+.Template02 .personalDetail .avatarBox .overlay {
+  content: ' ';
+  position: absolute;
+  top: -10px;
+  right: -56px;
+  bottom: 55px;
+  left: 51px;
+  background: rgba(204, 204, 204, 0.2);
+  border-radius: 5px;
+  z-index: 9;
+  display: none;
+}
+.Template02 .personalDetail .avatarBox .overlay .avatarBtn {
+  position: absolute;
+  top: 16px;
+  right: 17px;
+  display: flex;
+  width: 22px;
+  height: 22px;
+  justify-content: center;
+  align-items: center;
+}
+.Template02 .personalDetail .avatarBox .overlay .avatarBtn svg {
+  color: #999;
+  font-size: 1.6rem;
+}
+.Template02 .personalDetail .avatarBox .overlay .avatarBtn svg:hover {
+  color: #237fcd;
+}
+.Template02 .personalDetail .avatarBox .overlay .btnShowHide {
+  top: 44px;
+}
+.Template02 .personalDetail .avatarBox .btnDeleteAvatar {
+  position: absolute;
+  right: -24px;
+  top: -24px;
+  zoom: 0.8;
+  display: none;
+  z-index: 3;
+}
+.Template02 .personalDetail .avatarBox .avatar {
+  float: right;
+  background: url('../../../../../assets/assets/images/mainPage/cv/personalDetail/no-avatar.png');
+  background-size: 100%;
+  overflow: hidden !important;
+  position: relative;
+  z-index: 10;
+}
+.Template02 .personalDetail .avatarBox .avatar .avatarOverlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.3);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Template02 .personalDetail .avatarBox .avatar .avatarUploadIcon {
+  width: 20px;
+  height: 24px;
+}
+.Template02 .personalDetail .avatarBox .small,
+.Template02 .personalDetail .avatarBox .small img {
+  width: 100px;
+  height: 100px;
+}
+.Template02 .personalDetail .avatarBox .normal,
+.Template02 .personalDetail .avatarBox .normal img {
+  width: 150px;
+  height: 150px;
+}
+.Template02 .personalDetail .avatarBox .large,
+.Template02 .personalDetail .avatarBox .large img {
+  width: 188px;
+  height: 188px;
+}
+.Template02 .personalDetail .avatarBox:hover {
+  cursor: pointer;
+}
+.Template02 .personalDetail .avatarBox:hover .btnDeleteAvatar {
+  display: block;
+}
+.Template02 .personalDetail .avatarBox:hover .avatarOverlay {
+  opacity: 1;
+}
+.Template02 .personalDetail .avatarBox:hover .overlay {
+  display: block;
+}

@@ -1,0 +1,51 @@
+%transition-all {
+  transition: all linear .2s;
+}
+
+.Template02 {
+  .signature {
+    align-items: flex-start !important;
+
+    .signatureBox {
+      width: 138px;
+      height: 80px;
+      background: #f1f1f1;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      border-radius: 3px;
+
+      &:hover {
+        cursor: pointer;
+
+        .signatureUploadIcon, .btnDeleteSignature {
+          display: block;
+        }
+      }
+
+      .signatureUploadIcon {
+        width: 16px;
+        height: 18px;
+        // display: none;
+      }
+
+      .btnDeleteSignature {
+        position: absolute;
+        right: -24px;
+        top: -24px;
+        zoom: .8;
+        opacity: .6;
+        cursor: pointer;
+        // display: none;
+        z-index: 3;
+        @extend %transition-all;
+
+        &:hover {
+          opacity: .7;
+        }
+      }
+    }
+  }
+}

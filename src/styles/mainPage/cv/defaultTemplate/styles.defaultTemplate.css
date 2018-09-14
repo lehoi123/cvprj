@@ -1,0 +1,131 @@
+@import url(./education/styles.education.css);
+@import url(./otherSkill/styles.otherSkill.css);
+@import url(./personalDetail/styles.personalDetail.css);
+@import url(./workingExperience/styles.workingExperience.css);
+@import url(./signature/styles.signature.css);
+.defaultTemplate .heading h3,
+.defaultTemplate .row .label,
+.defaultTemplate .row .value {
+  background: #ffffff;
+}
+
+/*
+* defaultTemplate
+*/
+.defaultTemplate .part:nth-last-child(2).baseLine .bottomLine {
+  border-color: transparent !important;
+}
+
+.defaultTemplate:nth-child(1) {
+  margin-top: 0;
+}
+
+.defaultTemplate .baseLine {
+  padding-bottom: 20px;
+}
+.defaultTemplate .baseLine .bottomLine {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 4px solid #c0504d;
+}
+
+.defaultTemplate .subPart .heading h3 {
+  padding-left: 8px;
+}
+
+.defaultTemplate .half {
+  width: 50% !important;
+}
+
+.defaultTemplate .fill {
+  flex: 1;
+}
+
+.defaultTemplate .bold,
+.defaultTemplate strong {
+  font-weight: 500;
+}
+
+.defaultTemplate .colonChar:before {
+  content: ':';
+  float: left;
+  margin-right: 4px;
+}
+
+.defaultTemplate .dotChar:before {
+  content: ' ';
+  width: 5px;
+  height: 5px;
+  border-radius: 2.5px;
+  background: #000;
+  display: inline-block;
+  margin: 6px 8px 0px 4px;
+  float: left;
+}
+
+.defaultTemplate .heading {
+  margin-left: -4px;
+  width: 100%;
+}
+.defaultTemplate .heading h3 {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding-left: 4px;
+  border: 1px solid transparent;
+}
+.defaultTemplate .heading h3 * {
+  font-size: 1.6rem;
+}
+
+.defaultTemplate .rows {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.defaultTemplate .row {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  margin: 2px 0 0 -4px;
+}
+.defaultTemplate .row .labelBlank {
+  width: 186px;
+  height: 16px;
+  float: left;
+}
+.defaultTemplate .row .label {
+  width: 182px;
+  height: fit-content;
+  font-size: 1.2rem;
+  padding: 2px 0 2px 4px;
+  border: 1px solid transparent;
+}
+.defaultTemplate .row .label.subLabel {
+  width: -moz-calc(50% - 182px);
+  width: -webkit-calc(50% - 182px);
+  width: calc(50% - 182px);
+}
+.defaultTemplate .row .label * {
+  font-size: 1.2rem;
+}
+.defaultTemplate .row .value {
+  flex: 1;
+  font-size: 1.2rem;
+  padding: 2px 0 2px 4px;
+  border: 1px solid transparent;
+  margin-left: -1px;
+}
+.defaultTemplate .row .value * {
+  font-size: 1.2rem;
+}
+.defaultTemplate .row .label:hover,
+.defaultTemplate .row .value:hover {
+  background: #f6f6f6;
+}
+.defaultTemplate .row.rowActive .label,
+.defaultTemplate .row.rowActive .value {
+  border-color: #cccccc;
+}

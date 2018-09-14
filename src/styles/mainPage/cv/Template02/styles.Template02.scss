@@ -1,0 +1,157 @@
+@import './education/styles.education.css';
+@import './otherSkill/styles.otherSkill.css';
+@import './personalDetail/styles.personalDetail.css';
+@import './workingExperience/styles.workingExperience.css';
+@import './signature/styles.signature.css';
+
+$label-width: 182px;
+$base-line-color: #c0504d;
+$row-hover-color: #f6f6f6;
+$border-color: #cccccc;
+
+@mixin calc($property, $expression) {
+  #{$property}: -moz-calc(#{$expression});
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}
+
+%backgroundWhite {
+  background: #ffffff;
+}
+
+/*
+* defaultTemplate
+*/
+.Template02 {
+
+  .part:nth-last-child(2) {
+    &.baseLine {
+      .bottomLine {
+        border-color: transparent !important;
+      }
+    }
+  }
+
+  &:nth-child(1) {
+    margin-top: 0;
+  }
+
+  .baseLine {
+    .bottomLine {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-bottom: 4px solid $base-line-color;
+    }
+    padding-bottom: 20px;
+  }
+
+  .subPart {
+    .heading h3 {
+      padding-left: 8px;
+    }
+  }
+
+  .half {
+    width: 50% !important;
+  }
+
+  .fill {
+    flex: 1;
+  }
+
+  .bold, strong {
+    font-weight: 500;
+  }
+
+  .colonChar:before {
+    content: ':';
+    float: left;
+    margin-right: 4px;
+  }
+
+  .dotChar:before {
+    content: ' ';
+    width: 5px;
+    height: 5px;
+    border-radius: 2.5px;
+    background: #000;
+    display: inline-block;
+    margin: 6px 8px 0px 4px;
+    float: left;
+  }
+
+  .heading {
+    margin-left: -4px;
+    width: 100%;
+    h3 {
+      text-transform: uppercase;
+      font-size: 1.6rem;
+      font-weight: 500;
+      @extend %backgroundWhite;
+      padding-left: 4px;
+      border: 1px solid transparent;
+      * {
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  .rows {
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  .row {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    margin: 2px 0 0 -4px;
+
+    .labelBlank {
+      width: $label-width + 4px;
+      height: 16px;
+      float: left;
+    }
+
+    .label {
+      width: $label-width;
+      height: fit-content;
+      font-size: 1.2rem;
+      padding: 2px 0 2px 4px;
+      border: 1px solid transparent;
+      @extend %backgroundWhite;
+
+      &.subLabel {
+        @include calc('width', 50% - #{$label-width});
+      }
+
+      * {
+        font-size: 1.2rem;
+      }
+    }
+    .value {
+      flex: 1;
+      font-size: 1.2rem;
+      padding: 2px 0 2px 4px;
+      border: 1px solid transparent;
+      margin-left: -1px;
+      @extend %backgroundWhite;
+
+      * {
+        font-size: 1.2rem;
+      }
+    }
+
+    .label:hover, .value:hover {
+      background: $row-hover-color;
+    }
+
+    &.rowActive {
+      .label, .value {
+        border-color: $border-color;
+      }
+    }
+  }
+}

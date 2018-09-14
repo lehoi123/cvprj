@@ -1,0 +1,70 @@
+.flagMenuContainer {
+  width: 150px;
+  height: 207px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.6) 0 0 3px;
+  margin: 0;
+}
+
+.vietnamFlagWrapper,
+.germanyFlagWrapper,
+.koreaFlagWrapper,
+.japanFlagWrapper,
+.englishFlagWrapper {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  align-items: center;
+  text-align: left;
+  padding: 20px 0 20px 0;
+}
+.vietnamFlagWrapper p,
+.germanyFlagWrapper p,
+.koreaFlagWrapper p,
+.japanFlagWrapper p,
+.englishFlagWrapper p {
+  margin: 0;
+  font-size: 13px;
+}
+
+.germanyFlagWrapper p,
+.koreaFlagWrapper p,
+.japanFlagWrapper p,
+.englishFlagWrapper p {
+  margin: 0;
+  font-size: 13px;
+}
+
+.vietnamFlag,
+.englishFlag,
+.germanyFlag,
+.koreaFlag,
+.japanFlag {
+  margin: 0;
+}
+
+.germanyFlag {
+  width: 50px;
+  height: 20px;
+}
+
+.englishFlag {
+  width: 50px;
+  height: 20px;
+}
+
+.vietnamFlagWrapper:hover,
+.germanyFlagWrapper:hover,
+.koreaFlagWrapper:hover,
+.japanFlagWrapper:hover,
+.englishFlagWrapper:hover,
+.germanyFlagWrapper:hover,
+.koreaFlagWrapper:hover,
+.japanFlagWrapper:hover,
+.englishFlagWrapper:hover {
+  background-color: #237fcd;
+  color: #fff;
+  cursor: pointer;
+}

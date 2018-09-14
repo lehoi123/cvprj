@@ -1,0 +1,97 @@
+.SignatureModal {
+  flex: 1 10;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+
+  .SignatureModal-header {
+    height: 70px;
+    flex-direction: row;
+    display: flex;
+    margin: 0;
+    align-items: center;
+
+    .SignatureModal-before-upload {
+      margin: 0;
+
+      .ButtonModal {
+        padding-right: 1px;
+      }
+    }
+
+    .SignatureModal-after-upload {
+      margin: 0;
+      flex-direction: row;
+      align-items: center;
+
+      .ButtonModal {
+        &:nth-of-type(1) {
+          padding-right: 5px;
+        }
+      }
+    }
+  }
+
+  .SignatureModal-icon-no-margin {
+    margin: 0;
+  }
+
+  .SignatureModal-upload-form-label {
+    font-size: 14px;
+  }
+
+  .ButtonModal-straight-stroke {
+    margin: 0px 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .SignatureModal .SignatureModal-header .SignatureModal-before-upload .ButtonModal {
+    padding-right: 5px;
+  }
+}
+
+@media (min-width: 570px) and (min-width: 675px) {
+  
+}
+
+@media(min-width: 415px) and (max-width: 569px) {
+  .ButtonModal .ButtonModal-text {
+    font-size: 11px !important;
+  }
+
+  .SignatureModal .SignatureModal-upload-form-label {
+    font-size: 11px;
+  }
+}
+
+@media(min-width: 376px) and (max-width: 414px) {
+  .ButtonModal .ButtonModal-text {
+    font-size: 11px !important;
+  }
+
+  .SignatureModal .UploadBodyModal-upload-form-label {
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
+  .ButtonModal .ButtonModal-text {
+    font-size: 11px !important;
+  }
+
+  .SignatureModal .UploadBodyModal-upload-form-label {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 320px) {
+  .ButtonModal .ButtonModal-text {
+    font-size: 9px !important;
+    padding: 7px 0px 0px 2px !important;
+  }
+
+  .SignatureModal .UploadBodyModal-upload-form-label {
+    font-size: 8px;
+  }
+}

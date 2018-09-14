@@ -1,0 +1,15 @@
+
+<svg width="35px" height="23px" viewBox="0 0 35 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Sub-component" transform="translate(-306.000000, -235.000000)">
+            <g id="japan" transform="translate(306.000000, 235.000000)">
+                <path d="M34.3294737,22.9811756 L0.602300195,22.9811756 C0.269697856,22.9811756 0,22.7105833 0,22.376878 L0,0.623190476 C0,0.289485119 0.269697856,0.0188928571 0.602300195,0.0188928571 L34.3295419,0.0188928571 C34.6621442,0.0188928571 34.9318421,0.289485119 34.9318421,0.623190476 L34.9318421,22.376878 C34.9317739,22.7106518 34.662076,22.9811756 34.3294737,22.9811756 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                <rect id="Rectangle-12" stroke-opacity="0.47" stroke="#4A4A4A" x="0.5" y="0.5" width="34" height="22"></rect>
+                <ellipse id="Oval" fill="#D0021B" fill-rule="nonzero" cx="16.4658869" cy="11.5000685" rx="6.62475634" ry="6.64672619"></ellipse>
+            </g>
+        </g>
+    </g>
+</svg>

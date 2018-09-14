@@ -1,0 +1,113 @@
+.registerContainer {
+  margin: 0;
+  padding-top: 20px;
+  padding-left: 20px;
+  background-color: #fff;
+  height: 100%;
+}
+
+.registerTitle {
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.firstNameRegisterWrapper,
+.lastNameRegisterWrapper,
+.emailRegisterWrapper,
+.passwordRegisterWrapper {
+  margin-bottom: 15px;
+}
+.firstNameRegisterWrapper .firstNameRegisterInput,
+.firstNameRegisterWrapper .lastNameRegisterInput,
+.firstNameRegisterWrapper .emailRegisterInput,
+.firstNameRegisterWrapper .passwordRegisterInput,
+.lastNameRegisterWrapper .firstNameRegisterInput,
+.lastNameRegisterWrapper .lastNameRegisterInput,
+.lastNameRegisterWrapper .emailRegisterInput,
+.lastNameRegisterWrapper .passwordRegisterInput,
+.emailRegisterWrapper .firstNameRegisterInput,
+.emailRegisterWrapper .lastNameRegisterInput,
+.emailRegisterWrapper .emailRegisterInput,
+.emailRegisterWrapper .passwordRegisterInput,
+.passwordRegisterWrapper .firstNameRegisterInput,
+.passwordRegisterWrapper .lastNameRegisterInput,
+.passwordRegisterWrapper .emailRegisterInput,
+.passwordRegisterWrapper .passwordRegisterInput {
+  width: 95%;
+  height: 3.5vh;
+  border-radius: 2px;
+  border: 1px solid #cecece;
+}
+
+.firstNameRegister,
+.lastNameRegister,
+.emailRegister,
+.passwordRegister {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.acceptWrapper {
+  margin: 0;
+  margin-bottom: 20px;
+  background-color: #288ad3;
+  width: 23%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.acceptWrapper .accept {
+  font-size: 13px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.haveAccWrapper {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+.haveAccWrapper .haveAcc {
+  margin: 0;
+  font-size: 13px;
+}
+.haveAccWrapper .accWrapper {
+  margin: 0;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.haveAccWrapper .accWrapper p {
+  font-size: 13px;
+  color: #288ad3;
+  font-weight: bold;
+}
+
+.registerNotification {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  margin-right: 25px;
+  border-bottom: 0.5px solid #cecece;
+}
+.registerNotification p:first-child {
+  font-weight: bold;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.registerNotification p:nth-child(2) {
+  font-size: 11px;
+}
+
+.registerFailNavi p {
+  font-size: 11px;
+  margin-bottom: 6px;
+}
+
+.registerFailNavi .toChange {
+  font-size: 11px;
+  font-weight: bold;
+  color: #288ad3;
+}

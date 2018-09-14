@@ -1,0 +1,46 @@
+.ReactCop-corner-color {
+  background-color: #237fcd;
+  width: 10px;
+  height: 10px;
+  margin-bottom: -5px !important;
+  margin-right: -5px !important;
+  margin-top: -5px !important;
+  margin-left: -5px !important;
+}
+
+.ReactCrop__drag-handle.ord-se  {
+  @extend .ReactCop-corner-color;
+}
+
+.ReactCrop__drag-handle.ord-ne {
+  @extend .ReactCop-corner-color;
+}
+
+.ReactCrop__drag-handle.ord-nw {
+  @extend .ReactCop-corner-color;
+}
+
+.ReactCrop__drag-handle.ord-sw {
+  @extend .ReactCop-corner-color;
+}
+
+.ReactCrop__drag-handle.ord-w {
+  @extend .ReactCop-corner-color;
+}
+
+.ReactCrop__drag-handle.ord-n {
+  @extend .ReactCop-corner-color;
+}
+
+.ReactCrop__drag-handle.ord-s {
+  @extend .ReactCop-corner-color;
+}
+
+.ReactCrop__drag-handle.ord-e {
+  @extend .ReactCop-corner-color;
+}
+
+.ReactCrop__crop-selection {
+  outline: #57c5f7 dashed 1px;
+  border: none !important;
+}

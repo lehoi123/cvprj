@@ -1,0 +1,41 @@
+.Template02 .signature .signatureBox .btnDeleteSignature {
+  transition: all linear 0.2s;
+}
+
+.Template02 .signature {
+  align-items: flex-start !important;
+}
+.Template02 .signature .signatureBox {
+  width: 138px;
+  height: 80px;
+  background: #f1f1f1;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 3px;
+}
+.Template02 .signature .signatureBox:hover {
+  cursor: pointer;
+}
+.Template02 .signature .signatureBox:hover .signatureUploadIcon,
+.Template02 .signature .signatureBox:hover .btnDeleteSignature {
+  display: block;
+}
+.Template02 .signature .signatureBox .signatureUploadIcon {
+  width: 16px;
+  height: 18px;
+}
+.Template02 .signature .signatureBox .btnDeleteSignature {
+  position: absolute;
+  right: -24px;
+  top: -24px;
+  zoom: 0.8;
+  opacity: 0.6;
+  cursor: pointer;
+  z-index: 3;
+}
+.Template02 .signature .signatureBox .btnDeleteSignature:hover {
+  opacity: 0.7;
+}

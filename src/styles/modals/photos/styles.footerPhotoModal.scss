@@ -1,0 +1,13 @@
+.PhotoModal-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+
+  .ButtonModal-straight-stroke {
+    width: 1px;
+    height: 15px;
+    background-color: #bfb4b4;
+  }
+}

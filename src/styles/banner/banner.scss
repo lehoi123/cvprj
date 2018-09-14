@@ -1,0 +1,10 @@
+.bannerWrapper {
+    height: 500px;
+    width: 180px;
+    background-color: white;
+}
+@media only screen and (max-width : 1142px) {
+  .bannerWrapper {
+    display: none;
+  }
+}

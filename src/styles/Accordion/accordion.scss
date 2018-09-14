@@ -1,0 +1,87 @@
+$bodyBg: #fff;
+$underLine: #fff;
+
+
+.accordion-container {
+  width: 95%;
+  height: 100%;
+  border-radius: 5px;
+  background-color: #fff;
+  margin: 0;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+.answer {
+  background: $bodyBg;
+  color: #000;
+  font-size: 12px;
+}
+
+.accHeadWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.arrowImages {
+  margin: 0;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.summary {
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.folding-pannel {
+  display: block;
+  transition: all 0.2s ease-in;
+  line-height: 40px;
+}
+
+.active .summary {
+  border-color: transparent;
+  transition: border-color 0.2s ease-out;
+}
+
+.inactive .folding-pannel {
+  transform: translate(0);
+  transition: all 0.4s ease-in-out;
+  height: 0;
+  background-color: #fff;
+  opacity: 0;
+}
+
+.inactive .answer {
+    animation: moveInRight 1s ease-out;
+}
+
+@keyframes moveInRight {
+    100% {
+        opacity: 0;
+        transform: translate(0);
+    }
+}
+.active .folding-pannel {
+  transform: perspective(350px) rotateX(0deg);
+  transition: all 0.4s ease-in-out;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.active .arrowImages {
+  transform: perspective(350px) rotate(180deg);
+  transition: all 0.7s ease-in-out;
+}
+
+.inactive .arrowImages {
+  transform: perspective(350px) rotate(0deg);
+  transition: all 0.7s ease-in-out;
+}

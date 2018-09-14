@@ -1,0 +1,404 @@
+$page-width: 634px;
+$page-height: 990px;
+$bgr-color: #ffffff;
+$primary-color: #237fcd;
+$border-color: #cccccc;
+
+$tool-top: -66px;
+$tool-width: 50px;
+$tool-height: 160px;
+
+/*
+* cv page
+*/
+%transition-all {
+  transition: all linear .2s;
+}
+
+%partContent {
+  z-index: 10;
+  &:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    bottom: -1rem;
+    left: -1rem;
+    border-radius: 5px;
+    border: 2px solid #ebebeb;
+  }
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.cvContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 24px;
+
+  .cvContent {
+    width: $page-width;
+    height: $page-height;
+    background: $bgr-color;
+    padding: 42px 70px;
+    margin-top: 24px;
+    box-shadow: 0 1px 8px rgba(0,0,0,.1);
+    position: relative;
+
+    .pageIndex {
+      position: absolute;
+      width: 70px;
+      height: 22px;
+      background: #288ad3;
+      bottom: 10px;
+      right: 0;
+      border-top-left-radius: 2px;
+      border-bottom-left-radius: 2px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      p {
+        font-size: 1.2rem;
+        color: #ffffff;
+      }
+    }
+
+    .part {
+      width: $page-width;
+      position: relative;
+      padding-top: 16px;
+
+      .partContent {
+        position: relative;
+        z-index: 9;
+      }
+    }
+
+    .rowPartActive {
+      .partContent {
+        @extend %partContent;
+      }
+
+      .row {
+        position: relative;
+        &.rowActive {
+          z-index: 9;
+
+          .label, .value {
+            z-index: 9;
+          }
+
+          .rowTool {
+            display: flex;
+          }
+          &:after {
+            content: ' ';
+            display: block;
+            position: absolute;
+            top: -0.75rem;
+            left: -0.75rem;
+            right: -1.8rem;
+            bottom: -1rem;
+            background: rgba(242, 242, 242, .7);
+          }
+        }
+      }
+    }
+
+    .headingPartActive {
+      .partContent {
+        @extend %partContent;
+      }
+
+      &:before {
+        background: rgba(242, 242, 242, .7);
+        border: none;
+        border-radius: 0;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+
+      .heading h3, .label, .value {
+        border-color: $border-color !important;
+      }
+
+      .heading {
+        position: relative;
+        h3 {
+          position: relative;
+          z-index: 9;
+        }
+
+        .rowTool {
+          display: flex;
+          top: 0;
+        }
+      }
+    }
+
+    .rows .row:last-child {
+      .rowTool {
+        bottom: -50px;
+        top: inherit;
+      }
+    }
+
+    .rowTool {
+      position: absolute;
+      display: none;
+      flex-direction: column;
+
+      &.left {
+        top: $tool-top;
+        left: -56px;
+        width: $tool-width;
+        height: $tool-height;
+
+        .middleTool {
+          border-top-left-radius: 3px;
+          border-bottom-left-radius: 3px;
+        }
+      }
+
+      &.right {
+        top: $tool-top;
+        right: -64px;
+        width: $tool-width;
+        height: $tool-height;
+
+        .middleTool {
+          border-top-right-radius: 3px;
+          border-bottom-right-radius: 3px;
+        }
+      }
+
+      .topTool, .bottomTool {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .middleTool {
+        display: flex;
+        flex: 2;
+        width: 100%;
+        background: #f2f2f2;
+        flex-direction: column;
+        justify-content: center;
+
+        .btn {
+          margin: 3px auto;
+        }
+
+        .btnTrash {
+          * {
+            font-size: 2.4rem;
+            color: #999999;
+            @extend %transition-all;
+          }
+          &:hover * {
+            color: $primary-color;
+            cursor: pointer;
+          }
+          &.disable {
+            * {
+              color: #cecece;
+            }
+          }
+        }
+      }
+
+      .btn {
+        width: 22px;
+        height: 22px;
+        background: #999999;
+        display: flex;
+        border-radius: 11px;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        @extend %transition-all;
+
+        &:hover {
+          background: $primary-color;
+          cursor: pointer;
+        }
+
+        &.disable {
+          background: #cecece;
+        }
+
+        * {
+          color: #ffffff;
+          font-size: 1.2rem;
+        }
+      }
+
+      .tooltip {
+        position: absolute;
+        display: block;
+        left: 32px;
+        background: #666666;
+        z-index: 9;
+        border-radius: 3px;
+        width: max-content;
+        display: none;
+
+        &.left {
+          left: inherit;
+          right: 32px;
+          top: 0;
+          &:before {
+            content: ' ';
+            display: block;
+            width: 0px;
+            height: 0px;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-left: 10px solid #666666;
+            position: absolute;
+            right: -4px;
+            top: 3px;
+          }
+          p {
+            padding: 4px 8px;
+            font-size: 1.2rem !important;
+            color: #ffffff !important;
+          }
+        }
+
+        &.right {
+          &:before {
+            content: ' ';
+            display: block;
+            width: 0px;
+            height: 0px;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-right: 10px solid #666666;
+            position: absolute;
+            left: -4px;
+            top: 3px;
+          }
+          p {
+            padding: 4px 8px 4px 8px;
+            font-size: 1.2rem !important;
+            color: #ffffff !important;
+          }
+        }
+      }
+
+      .parentTooltip {
+        position: relative;
+        &.disable {
+          .tooltip {
+            background: #cecece;
+            &.right {
+              &:before {
+                border-right: 10px solid #cecece;
+              }
+            }
+            &.left {
+              &:before {
+                border-left: 10px solid #cecece;
+              }
+            }
+          }
+        }
+        &:hover {
+          .tooltip {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+/**
+ ********* Add part modal ********
+ */
+ %flexCenter {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .addPartModal {
+   width: 100%;
+   .heading {
+     text-align: left;
+     margin: 19px 0 0 5px;
+     h3 {
+       font-size: 1.4rem;
+       font-weight: 600;
+     }
+   }
+   .content {
+     width: 100%;
+     display: flex;
+     flex-wrap: wrap;
+     margin-top: 16px;
+
+     .item {
+       width: 25%;
+       height: 150px;
+       margin: 0;
+       .itemBody {
+         width: 90%;
+         height: 80px;
+         border-radius: 3px;
+         background: #ececec;
+         @extend %flexCenter;
+         @extend %transition-all;
+
+         .iconBox {
+           width: 60px;
+           height: 60px;
+           border-radius: 30px;
+           background: #ffffff;
+           @extend %flexCenter;
+           * {
+             font-size: 2rem;
+             color: #999999;
+             @extend %transition-all;
+           }
+         }
+       }
+
+       .itemName {
+         text-align: center;
+         margin-top: 12px;
+         p {
+           font-size: 1.2rem;
+         }
+       }
+
+       // item active
+       &.active, &:hover {
+         cursor: pointer;
+         .itemBody {
+           background: $primary-color;
+         }
+         .iconBox {
+           * {
+             color: $primary-color;
+           }
+         }
+         .itemName p {
+           font-weight: 500;
+         }
+       }
+     }
+   }
+ }

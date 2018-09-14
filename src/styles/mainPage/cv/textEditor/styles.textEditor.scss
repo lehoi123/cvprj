@@ -1,0 +1,42 @@
+$toolbar-height: 28px;
+
+.textEditor {
+  position: relative;
+
+  ul > li {
+    list-style: inside;
+  }
+
+  .toolbarEditor {
+    height: $toolbar-height;
+    background: #808080;
+    position: absolute;
+    right: 8px;
+    top: -$toolbar-height - 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    display: none;
+    padding: 0 2px;
+    z-index: 9;
+
+    &.show {
+      display: flex;
+    }
+    .buttonEditor {
+      width: $toolbar-height - 4px;
+      height: $toolbar-height;
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #cccccc;
+      * {
+        font-size: 1.4rem !important;
+      }
+      &:hover {
+        color: #ffffff;
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+$theme: #237FCD;
+$white: #fff;
+
+.flagMenuContainer {
+    width: 150px;
+    height: 207px;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0,0,0,0.6) 0 0 3px;
+    margin: 0;
+}
+
+.vietnamFlagWrapper {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    align-items: center;
+    text-align: left;
+    p {
+        margin: 0;
+        font-size: 13px;
+      
+    }
+    padding: 20px 0 20px 0;
+}
+
+.germanyFlagWrapper,
+.koreaFlagWrapper,
+.japanFlagWrapper,
+.englishFlagWrapper
+{
+    @extend .vietnamFlagWrapper;
+    p {
+        margin: 0;
+        font-size: 13px;
+    }
+}
+
+.vietnamFlag {
+    margin: 0;
+}
+
+.englishFlag,
+.germanyFlag,
+.koreaFlag,
+.japanFlag,
+{
+    @extend .vietnamFlag;
+}
+.germanyFlag {
+    width: 50px;
+    height: 20px;
+}
+.englishFlag {
+    width: 50px;
+    height: 20px;
+}
+
+
+
+.vietnamFlagWrapper:hover,
+.germanyFlagWrapper:hover, 
+.koreaFlagWrapper:hover,
+.japanFlagWrapper:hover,
+.englishFlagWrapper:hover {
+
+    background-color: $theme;
+    color: $white;
+    cursor: pointer;
+}
+
+

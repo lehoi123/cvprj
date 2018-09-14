@@ -1,0 +1,82 @@
+$theme: #237FCD;
+$white: #fff;
+$shadow: #000;
+
+.hoverContainer {
+    width: 205px;
+    height: 160px;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.photoHoverContainer {
+    width: 205px;
+    height: 180px;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.uploadPhotoHover {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start !important;
+    align-items: center;
+    text-align: left;
+    margin: 0;
+    height: 207px;
+    width: 100%;
+    font-size: 14px;
+    padding-left: 15px;
+    border-bottom: 0.5px solid rgba($color: $shadow, $alpha: 0.3);
+    background-color: $white;
+    cursor: pointer;
+    p {
+        margin: 0;
+        font-size: 13px;
+        margin-left: 10px;
+    };
+}
+
+.hoverIcon {
+    margin: 0;
+    width: 12px;
+    height: 14px;
+}
+.hideHoverIcon {
+    margin: 0;
+    width: 16px;
+    height: 12px;
+}
+.showHoverIcon {
+    margin: 0;
+    width: 16px;
+    height: 10px;
+}
+
+.cropPhotoHover, 
+.choosePhotoSizeHover,
+.hidePhotoHover,
+.showPhotoHover
+{
+    @extend .uploadPhotoHover;
+    p {
+        margin: 0;
+        font-size: 13px;
+        margin-left: 10px;
+    }
+}
+
+.uploadPhotoHover:hover,
+.choosePhotoSizeHover:hover,
+.hidePhotoHover:hover,
+.showPhotoHover:hover {
+    background-color: $theme;
+    color: $white;
+}
+
+
+

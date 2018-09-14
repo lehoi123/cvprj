@@ -1,0 +1,59 @@
+.UploadBodyModal-body {
+  flex: 8;
+  flex-direction: column;
+  display: flex;
+  margin: 0;
+
+  .UploadBodyModal-body-top {
+    flex: 6;
+    flex-direction: row;
+    margin: 0;
+  }
+}
+
+.UploadBodyModal-upload-form-label {
+  font-size: 14px;
+}
+
+.UploadBodyModal-upload-base {
+  flex: 1;
+  display: flex;
+  border: 1px solid #bfb4b4;
+}
+
+.UploadBodyModal-upload-form {
+  @extend .UploadBodyModal-upload-base;
+  flex-direction: row;
+}
+
+.UploadBodyModal-crop-form {
+  @extend .UploadBodyModal-upload-base;
+}
+
+.UploadBodyModal-upload-form-url {
+  @extend .UploadBodyModal-upload-base;
+  flex-direction: column;
+  padding: 20px 10px 10px 10px;
+
+  .UploadBodyModal-upload-form-url-input {
+    border: 1px solid #bfb4b4;
+    margin: 10px 0px 10px 0px;
+    height: 50px;
+    padding: 0px 5px 0px 5px;
+  }
+}
+
+.UploadBodyModal-upload-form-choose-picture {
+  @extend .UploadBodyModal-upload-base;
+  flex-direction: column;
+  padding: 20px 10px 10px 10px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgb(231, 231, 231);
+  }
+}
+
+.UploadBodyModal-upload-form-choose-picture-input {
+  display: none;
+}

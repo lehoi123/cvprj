@@ -1,0 +1,22 @@
+.ReactCop-corner-color,
+.ReactCrop__drag-handle.ord-se,
+.ReactCrop__drag-handle.ord-ne,
+.ReactCrop__drag-handle.ord-nw,
+.ReactCrop__drag-handle.ord-sw,
+.ReactCrop__drag-handle.ord-w,
+.ReactCrop__drag-handle.ord-n,
+.ReactCrop__drag-handle.ord-s,
+.ReactCrop__drag-handle.ord-e {
+  background-color: #237fcd;
+  width: 10px;
+  height: 10px;
+  margin-bottom: -5px !important;
+  margin-right: -5px !important;
+  margin-top: -5px !important;
+  margin-left: -5px !important;
+}
+
+.ReactCrop__crop-selection {
+  outline: #57c5f7 dashed 1px;
+  border: none !important;
+}

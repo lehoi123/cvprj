@@ -1,0 +1,64 @@
+@mixin breakpoint($class) {
+    @if $class == xs {
+      @media (max-width: 767px) {
+        @content;
+      }
+    } @else if $class == sm {
+      @media (min-width: 768px) {
+        @content;
+      }
+    } @else if $class == md {
+      @media (min-width: 992px) {
+        @content;
+      }
+    } @else if $class == lg {
+      @media (min-width: 1200px) {
+        @content;
+      }
+    } @else {
+      @warn "Breakpoint mixin supports: xs, sm, md, lg";
+    }
+}
+.newModal {
+    height: 130px;
+    margin: 0;
+}
+
+.refreshQuestion {
+    text-align: center;
+    padding-top: 25px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 0px;
+}
+
+@mixin actionBtnStyle() {
+    padding: 5px 15px 5px 15px;
+    font-size: 1.3rem;
+    margin: 0px;
+    //margin-right: 30px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+.refreshAction {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+    color: #fff;
+    margin: 0px;
+    //margin-left: 40px;
+    //transform: translate(4%,- 10%);
+    .freshAction-cancel {
+        background-color: rgb(194, 72, 47);
+        @include actionBtnStyle();
+    }
+    .refreshAction-startOver {
+        background-color: rgb(40, 138, 211);
+        @include actionBtnStyle();
+        margin-left: 20px !important;
+    }
+}
+
+

@@ -1,0 +1,83 @@
+.subMenuMobContainer {
+  width: 150px;
+  height: 305px;
+  background-color: #fff;
+  z-index: 999999;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.6) 0 0 3px;
+  padding-bottom: 10px;
+}
+
+.subNew,
+.subUpload,
+.subLanguage,
+.subPicture,
+.subSignature,
+.subShare {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  align-items: center;
+  text-align: left;
+  padding-left: 15px;
+  padding-top: 10px;
+}
+.subNew p,
+.subUpload p,
+.subLanguage p,
+.subPicture p,
+.subSignature p,
+.subShare p {
+  margin: 0;
+  font-size: 13px;
+  margin-left: 15px;
+}
+
+.subIcon {
+  width: 25px;
+  height: 32px;
+  margin: 0;
+}
+
+.subLanguageIcon {
+  width: 35px;
+  height: 35px;
+  margin: 0;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.subUpload p,
+.subLanguage p,
+.subPicture p,
+.subSignature p,
+.subShare p {
+  margin: 0;
+  font-size: 13px;
+  margin-left: 15px;
+}
+
+.subUpload .faSearchPlus,
+.subLanguage .faSearchPlus,
+.subPicture .faSearchPlus,
+.subSignature .faSearchPlus,
+.subShare .faSearchPlus {
+  margin: 0;
+  font-size: 18px;
+  color: #464646;
+  margin-right: 10px;
+}
+
+.subUpload .language-icon,
+.subLanguage .language-icon,
+.subPicture .language-icon,
+.subSignature .language-icon,
+.subShare .language-icon {
+  position: absolute;
+  margin-left: 15px;
+  margin-top: 8px;
+  width: 20px;
+  height: 20px;
+}

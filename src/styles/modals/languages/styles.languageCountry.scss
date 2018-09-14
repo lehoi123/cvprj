@@ -1,0 +1,57 @@
+.LanguageCountry {
+  display: flex;
+  margin: 0;
+
+  &:nth-of-type(3n+2) {
+    width: 35%;
+  }
+
+  &:nth-of-type(3n+1) {
+    width: 35%;
+    justify-content: flex-start;
+  }
+
+  &:nth-of-type(3n+3) {
+    width: 30%;
+  }
+
+  .LanguageCountry-text {
+    font-size: 13px;
+    align-self: center;
+    margin: 0 0 0 4px;
+  }
+
+  .LanguageCountry-text-highlight {
+    font-weight: bold;
+  }
+
+  .LanguageCountry-icon-highlight {
+    position: relative;
+
+    &:after {
+      display: block;
+      content: ' ';
+      width: 24px;
+      height: 17px;
+      position: absolute;
+      top: 3px;
+      left: 0;
+      border: 1px dashed #000;
+    }
+  }
+
+  .LanguageCountry-no-margin {
+    margin: 0;
+  }
+
+  .LanguageCountry-straight-stroke {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 11px;
+  }
+}
+
+.LanguageCountry:hover {
+  background-color: rgb(231, 231, 231);
+  cursor: pointer;
+}

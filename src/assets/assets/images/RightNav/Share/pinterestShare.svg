@@ -1,0 +1,10 @@
+<svg 
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="201px" height="32px">
+<path fill-rule="evenodd"  fill="rgb(174, 38, 37)"
+ d="M2.000,0.000 L199.000,0.000 C200.105,0.000 201.000,0.895 201.000,2.000 L201.000,30.000 C201.000,31.105 200.105,32.000 199.000,32.000 L2.000,32.000 C0.895,32.000 0.000,31.105 0.000,30.000 L0.000,2.000 C0.000,0.895 0.895,0.000 2.000,0.000 Z"/>
+<path fill-rule="evenodd"  fill="rgb(155, 36, 35)"
+ d="M2.000,2.000 L30.000,2.000 L30.000,30.000 L2.000,30.000 L2.000,2.000 Z"/>
+<text kerning="auto" font-family="Myriad Pro" fill="rgb(0, 0, 0)" font-size="12px" x="43px" y="18.964px"><tspan font-size="12px" fill="#FFFFFF">Share&#32;with&#32;Pinterest</tspan></text>
+</svg>

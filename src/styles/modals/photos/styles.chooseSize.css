@@ -1,0 +1,50 @@
+.PhotoModal-body-top {
+  border: solid #e7e7e7 1px;
+}
+
+.PhotoModal-choose-size-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.PhotoModal-choose-size-form .PhotoModal-choose-size-img {
+  display: flex;
+  height: 250px;
+}
+.PhotoModal-choose-size-form .PhotoModal-choose-size-img img {
+  height: 100%;
+  width: 170px;
+  border: solid #e7e7e7 1px;
+  background-color: #288ad3;
+}
+.PhotoModal-choose-size-form .PhotoModal-choose-size-slide {
+  flex: 2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+}
+.PhotoModal-choose-size-form
+  .PhotoModal-choose-size-slide
+  .PhotoModal-choose-size-button {
+  flex: 1;
+  height: 40%;
+  margin: 0px 5px;
+  width: 50px;
+  background: #c6c6c6;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.PhotoModal-choose-size-form
+  .PhotoModal-choose-size-slide
+  .PhotoModal-choose-size-button-highlight {
+  background: #288ad3;
+  color: #fff;
+}
+.PhotoModal-choose-size-form
+  .PhotoModal-choose-size-slide
+  .PhotoModal-choose-size-button:hover {
+  background: #288ad3;
+  color: #fff;
+}

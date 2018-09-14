@@ -1,0 +1,16 @@
+.CropBodyModal-body {
+  flex: 8;
+  flex-direction: column;
+  display: flex;
+  margin: 0;
+}
+.CropBodyModal-body .CropBodyModal-body-top {
+  flex-direction: row;
+  margin: 0;
+}
+
+.CropBodyModal-crop-form {
+  float: left;
+  padding: 10px;
+  border: 1px solid #bfb4b4;
+}

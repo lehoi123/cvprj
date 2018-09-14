@@ -1,0 +1,32 @@
+.arrowStyles {
+  font-size: 25px;
+  color: rgba(167, 167, 167, 0.3);
+}
+
+.leftArrow,
+.rightArrow {
+  display: flex;
+  flex: 0.5;
+  cursor: pointer;
+}
+
+.CVSegment .centerImgs {
+  cursor: pointer;
+  outline: none;
+}
+
+.CVSegment .center-tempImg {
+  cursor: pointer;
+  outline: none;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(167, 167, 167, 0.3);
+}
+
+.CVSegment .centerTemplate-highLight {
+  cursor: pointer;
+  border-style: solid;
+  border-width: 1.4px;
+  border-color: #237fcd;
+  outline: none;
+}
